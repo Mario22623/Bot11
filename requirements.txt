@@ -1,6 +1,6 @@
 Flask
 gunicorn
-telebot
+pyTelegramBotAPI
 requests
 msal
 pyshorteners
