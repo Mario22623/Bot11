@@ -42,7 +42,7 @@ def load_token_from_file():
     return None
 
 def authenticate_user(user_id):
-    flow = msal_app.initiate_device_flow(scopes=["Files.ReadWrite.All", "offline_access"])
+    flow = msal_app.initiate_device_flow(scopes=["Files.ReadWrite.All"])
     
     if 'user_code' not in flow:
         raise ValueError("Failed to create device flow. Check app permissions.")
